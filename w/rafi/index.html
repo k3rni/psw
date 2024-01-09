@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+  <title>PSW</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://k3rni.github.io/psw/print.css" media="print">
+  <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css"> -->
+  <link rel="stylesheet" href="https://k3rni.github.io/psw/simple.css">
+  <link rel="stylesheet" href="https://k3rni.github.io/psw/custom.css">
+  <link rel="icon" type="image/png" href="https://k3rni.github.io/psw/logo.png">
+
+  
+
+  
+  
+</head>
+
+<body>
+<nav class="menu">
+  <div class="nav-left">
+    <ul class="nav-left-list">
+        <li class="nav-left-item"></li><a href="https://k3rni.github.io/psw"><div class="logo"></div></li>
+      <li class="nav-left-item"></li><a href="https://k3rni.github.io/psw"><span class="sitename">PSW</span></a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <ul class="nav-right-list">
+      
+      <li class="nav-right-item">
+          
+            <a href="https://k3rni.github.io/psw/o/">Promotions</a>
+          
+      </li>
+      
+      <li class="nav-right-item">
+          
+            <a href="https://k3rni.github.io/psw/e/">Events</a>
+          
+      </li>
+      
+      <li class="nav-right-item">
+          
+            <a href="https://k3rni.github.io/psw/w/">Talent</a>
+          
+      </li>
+      
+      <li><a id="darkmodetoggle" onclick="switchTheme()"><svg class="feather"><use href="https://k3rni.github.io/psw/feather-sprite.svg#moon"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container content">
+    
+<h1>Rafi</h1>
+
+<p><strong>Rafi</strong> is a wrestler from Poland.</p>
+<ul>
+<li>Also known as: Rafi Rarytas</li>
+<li>Years active: <span>2023
+</span></li>
+<li>Billed height: 185 cm</li>
+<li>Billed weight: 82 kg</li>
+</ul>
+
+
+<h2>Career</h2>
+<link rel="stylesheet" href="https://k3rni.github.io/psw/career.css"/>
+
+
+
+
+
+<h3>Matches per promotion and year</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Promotions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2023</td>
+            <td>
+                
+  <span title="1 matches">
+    <a href="https://k3rni.github.io/psw/o/ppw/">ppw</a>
+  </span>
+
+                </td>
+        </tr>
+        </tbody>
+</table>
+
+<h3>All matches</h3>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Org</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td style="white-space: nowrap">2023-12-08</td>
+            <td>
+                
+                  
+  <span title="">
+    <a href="https://k3rni.github.io/psw/o/ppw/">ppw</a>
+  </span>
+
+                
+            </td>
+            
+            <td>
+                
+
+
+    
+    
+    
+
+
+
+    
+
+
+
+<a href="https://k3rni.github.io/psw/w/ricardo-diesel/">Ricardo Diesel</a>
+
+defeated
+<a href="https://k3rni.github.io/psw/w/adam-wong/">Adam Wong</a> and <a href="https://k3rni.github.io/psw/w/rafi/">Rafi</a>
+
+
+    
+
+<br/>
+<strong>
+
+3-way match
+</strong>
+
+                
+                <small>at <a href="https://k3rni.github.io/psw/e/2023-12-08-ppw-turbo-og/">PpW Turbo OG</a></small>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+
+
+<p class="tagsData">
+    
+</p>
+
+  </div>
+</section>
+
+
+<footer>
+    <p>Created with <a href="https://github.com/getzola/zola">zola</a>, the <a href="https://github.com/wilsonjholmes/mensch">mensch theme</a>, and lots of ☕</p>
+</footer>
+
+<script>
+// Get the theme toggle input
+const currentTheme = localStorage.getItem("theme");// If the current local storage item can be found
+
+// Function that will switch the theme based on the if the theme toggle is checked or not
+function switchTheme() {
+  if (document.documentElement.getAttribute("data-theme") === "dark") {
+    document.documentElement.setAttribute("data-theme", "light");
+    // Set the user's theme preference to dark
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    // Set the user's theme preference to light
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+// Get the current theme from local storage
+if (currentTheme) {
+        // Set the body data-theme attribute to match the local storage item
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        if (currentTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+        }
+}
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        console.log('user prefers dark scheme, going dark');
+        document.documentElement.setAttribute("data-theme", "dark");
+        }
+</script>
+
+
+
+</body>
+
+</html>
